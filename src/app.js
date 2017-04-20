@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <View>
-        <Text> Authorization App</Text>
+        <Text>Authorization App Working</Text>
       </View>
     );
   }

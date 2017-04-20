@@ -1,6 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from 'aithorized/src/app';
+import App from 'authorized/src/app';
 
-AppRegistry.registerComponent('authorization', () => App);
-
-AppRegistry.registerComponent('authorized', () => authorized);
+AppRegistry.registerComponent('authorized', () => App);
