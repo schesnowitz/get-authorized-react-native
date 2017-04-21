@@ -1,19 +1,28 @@
 import React from 'react';
 import { TextInput, View, Text } from 'react-native';
 
-const InputField = ({ label, value, onChangeText, placeholder }) => {
-  return (
-    <View>
-      <Text>{label}</Text>
-      <TextInput
-      placeholder={placeholder}
-      autoCorrect={false}
-      value={value}
-      onChangeText={onChangeText}
-      />
-    </View>
-  );
-};
+  const InputField = ({
+    label,
+    value,
+    onChangeText,
+    placeholder,
+    secureTextEntry,
+    selectTextOnFocus
+  }) => {
+    return (
+      <View>
+        <Text>{label}</Text>
+        <TextInput
+        selectTextOnFocus={selectTextOnFocus}
+        secureTextEntry={secureTextEntry}
+        placeholder={placeholder}
+        autoCorrect={false}
+        value={value}
+        onChangeText={onChangeText}
+        />
+      </View>
+    );
+  };
 
 const styles = {
   inputStyle: {
