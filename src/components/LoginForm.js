@@ -6,15 +6,17 @@ import Card from './Card';
 import  InputField from './InputField';
 
 class LoginForm extends Component {
-  state = {text: ''};
+  state = {email: ''};
 
   render() {
     return(
       <Card>
         <CardSection />
         <InputField
-        value={this.state.text}
-        onChangeText={text => this.setState({ text })}
+        placeholder='gfys@gmail.com'
+        label='Email Baby'
+        value={this.state.email}
+        onChangeText={email => this.setState({ email })}
         />
         <CardSection />
         <CardSection>
